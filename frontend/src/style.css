@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.cell-6{
+    border: 2px solid black; 
+    height: 55vh;
+    
+} 
+.cell-12{
+    border: 2px solid black; 
+    height: 25vh;
+}
+
+.div1{
+    border: 1px solid black; 
+    height: 100%;
+}
+.div2{
+    border: 2px solid black; 
+}
+ .container login{
+     justify-content: center;
+ }

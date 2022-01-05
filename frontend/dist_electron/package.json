@@ -1,0 +1,71 @@
+{
+  "name": "veu-electron-pro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "electron:build": "vue-cli-service electron:build",
+    "electron:serve": "vue-cli-service electron:serve",
+    "postinstall": "electron-builder install-app-deps",
+    "postuninstall": "electron-builder install-app-deps",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "@vue/cli-plugin-e2e-cypress": "^4.5.15",
+    "@vue/cli-plugin-unit-mocha": "^4.5.15",
+    "axios": "^0.24.0",
+    "chai": "^4.3.4",
+    "core-js": "^3.6.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "eslint-loader": "^4.0.2",
+    "metro4": "^4.5.0",
+    "sass": "^1.45.2",
+    "scss": "^0.2.4",
+    "viui": "^0.1.1",
+    "vue": "^2.6.11",
+    "vue-axios": "^3.4.0",
+    "vue-cookies": "^1.7.4",
+    "vue-router": "^3.5.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/test-utils": "^1.3.0",
+    "babel-eslint": "^10.1.0",
+    "cypress": "^9.2.0",
+    "electron": "^13.6.3",
+    "electron-devtools-installer": "^3.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "node-sass": "^7.0.1",
+    "prettier": "^2.5.1",
+    "sass-loader": "^12.4.0",
+    "vue-cli-plugin-electron-builder": "~2.1.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
